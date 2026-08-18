@@ -5,7 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const axios = require('axios');
 const FormData = require('form-data');
-const { createCanvas, loadImage } = require('canvas');
+const { createCanvas, loadImage } = require('@napi-rs/canvas');
+
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
